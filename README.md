@@ -20,4 +20,18 @@ CodeDeck is a coding practice platform that curates a list of coding questions a
 ### **Backend**  
 - **Spring Boot** for API development  
 - **MongoDB** for data storage  
-- **Clerk** for authentication 
+- **Clerk** for authentication
+
+## 📸 **Screenshots** 
+
+
+<img src="https://github.com/user-attachments/assets/036f79bf-776c-40e4-93ca-4b3fc194f74c" alt="Screenshot 1" width="900"/>
+<img src="https://github.com/user-attachments/assets/c7fc4333-32d3-4f51-b727-2469deb7ddc1" alt="Screenshot 1" width="900"/>
+<img src="https://github.com/user-attachments/assets/a8848110-7886-40f3-ac24-0a159c8b29fd" alt="Screenshot 1" width="900"/>
+<img src="https://github.com/user-attachments/assets/4642debd-c0f0-4edb-a6ba-5c36571615e1" alt="Screenshot 1" width="900"/>
+
+
+
+
+
+
