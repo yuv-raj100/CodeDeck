@@ -11,9 +11,15 @@ import Star from '../Svgs/Star';
 
 const Header:React.FC = ()=>{
 
+    // const navigate = useNavigate();
+
     return (
-      <div className="py-6 px-6 flex justify-between items-center text-white bg-[#101010]">
-        <h1 className="font-bold text-3xl bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent hover:scale-105 transition-transform cursor-pointer">
+      <div className="py-6 px-6 flex justify-between items-center text-white bg-[#101010] ">
+        
+        <h1
+          // onClick={() => navigate("/")}
+          className="font-bold text-3xl bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent hover:scale-105 transition-transform cursor-pointer"
+        >
           CodeDeck
         </h1>
         <ul className="flex justify-between space-x-10">

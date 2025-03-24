@@ -7,6 +7,7 @@ import microsoft from "../Images/microsoft.jpg";
 import uber from "../Images/uber.jpg";
 import linkedin from "../Images/linkedin.png";
 import { useNavigate } from "react-router-dom";
+import Marquee from "react-fast-marquee";
 
 
 
@@ -48,33 +49,36 @@ const MainPage: React.FC = () => {
                     ${isHovered ? "shadow-lg shadow-amber-500/50" : ""}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            onClick={()=>navigate('/dashboard')}
+            onClick={() => navigate("/dashboard")}
           >
             Get Started
           </button>
         </div>
 
         {/* Company Logos Section */}
-        <div className="mt-24 max-w-5xl mx-auto">
+        <div className="mt-24  mx-auto">
           <h2 className="text-2xl font-semibold text-center text-white mb-12">
             Solve questions asked in
           </h2>
 
-          <div className="h-48 overflow-hidden w-full">
-            <div
-              className={`flex items-center space-x-10 `}
-            >
-              {companyLogos.concat(companyLogos).map((company, index) => (
-                <img
-                  key={index}
-                  src={company.src}
-                  alt={company.alt}
-                  className="h-16 object-contain"
-                />
-              ))}
+          <div className="h-16">
+            <div className={`flex items-center space-x-10`}>
+              <Marquee>
+                {companyLogos.concat(companyLogos).map((company, index) => (
+                  <img
+                    key={index}
+                    src={company.src}
+                    alt={company.alt}
+                    className={`${
+                      company.alt == "Microsoft" ? "h-32" : "h-16"
+                    } ${
+                      company.alt == "LinkedIn" ? "h-44" : "h-20"
+                    } object-contain px-6`}
+                  />
+                ))}
+              </Marquee>
             </div>
           </div>
-          
         </div>
       </div>
     );

@@ -31,14 +31,12 @@ const router = createBrowserRouter(
 
 function App() {
 
+  // const navigate = useNavigate();
+
   
   return (
     <>
-      {/* <div className="bg-[#101010] h-full">
-        <Header />
-        
-      </div> */}
-      <Header/>
+      <Header />
       <RouterProvider router={router} />
     </>
   );
