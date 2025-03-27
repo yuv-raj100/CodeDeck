@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-public class PostController {
+public class QuestionController {
 
     @Autowired
     QuestionRepository repo;
